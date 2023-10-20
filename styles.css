@@ -1,0 +1,111 @@
+body {
+    background: #406383;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-image: url("images/japan_4.jpeg");
+    background-size: 100%;
+    height:100px;
+    background-position: center;
+    padding:20px;
+    height:100px;
+    background-color:#406383;
+}
+
+.mobile {
+    display:none
+}
+
+header.desktop {
+    display: none;
+}
+
+header a {
+    color:whitesmoke;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: top 40px;
+}
+
+header .logo a {
+    background-image: url("images/logo.jpeg");
+    background-size:300px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 80px;
+    position: relative;
+    text-indent: -9999999px;
+    top: -30px;
+    width:300px;
+}
+
+.features {
+    background: #406383;
+    color:whitesmoke;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+}
+
+.feautres figure {
+    background: whitesmoke;
+    margin:auto;
+    width: 0px;
+    text-align: center;
+}
+
+.features figure img {
+    width:400px;
+    border-radius: 10%;
+    box-shadow: grey 0 0 10px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+li {
+    display: inline-block;
+    margin-right:20px;
+}
+
+footer {
+    background: #406383;
+    color: white;
+    padding: 10px 20px;
+    display:block;
+    list-style-type: none;
+}
+
+li1 {
+    display:list-item
+}
+
+@media screen and (max-width: 715px) {
+    .features {
+        display: block;
+    }
+    header.mobile {
+        display: inline-block
+    }
+    header.desktop {
+        display:none
+    }
+    header.logo a{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1080) {
+    header.mobile{
+        display: none;
+    }
+    header.desktop{
+        display:none
+    }
+}
