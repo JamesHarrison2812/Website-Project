@@ -31,7 +31,7 @@ header a {
 }
 
 header .logo a {
-    background-image: url("/logo.jpeg");
+    background-image: url("logo.jpeg");
     background-size:300px;
     background-repeat: no-repeat;
     display: inline-block;
